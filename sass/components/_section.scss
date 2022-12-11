@@ -1,0 +1,10 @@
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .section-benefits,
+  .section-work,
+  .section-team {
+    display: flex;
+    gap: 30px;
+  }
