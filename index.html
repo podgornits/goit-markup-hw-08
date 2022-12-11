@@ -109,8 +109,6 @@
              </li>
             </ul>
 
-
-
           </div>
           
         </div>
@@ -200,12 +198,20 @@
       <h2 class="title">Наша команда</h2>
       <ul class="section-team">
         <li class="item section-team__item">
-          <img class="photo-team"
-          srcset="./images/r.jpg 1x, ./images/r2x.jpg 2x "
-            src="./images/r.jpg"
+          <picture>
+            <source srcset="./images/r.jpg 1x, ./images/r2x.jpg 2x " 
+            media="(min-width: 1200px)"/>
+            <source srcset="./images/r-tab1x.jpg 1x, ./images/r-tab2x.jpg 2x " 
+            media="(min-width: 768px)"/>
+            <source srcset="./images/r-mob1x.jpg 1x, ./images/r-mob2x.jpg 2x " 
+            media="(max-width: 767px)"/>
+            <img class="photo-team"
+            src="./images/r-mob2x.jpg"
             alt="Фото члена команди Ігора Дем'яненко"
             width="270"
           />
+          </picture>
+         
           <div class="description"> 
           <h3 class="team-name">Ігор Дем'яненко</h3>
           <p class="team-post" lang="en">Product Designer</p>
@@ -242,12 +248,22 @@
           
         </div> 
         </li>
+        
         <li class="item section-team__item"">
-          <img class="photo-team"
-            src="./images/t.jpg"
-            alt="Фото члена команди Ольги Рєпіної"
+          <picture>
+            <source srcset="./images/t.jpg 1x, ./images/t2x.jpg 2x " 
+            media="(min-width: 1200px)"/>
+            <source srcset="./images/t-tab1x.jpg 1x, ./images/t-tab2x.jpg 2x " 
+            media="(min-width: 768px)"/>
+            <source srcset="./images/t-mob1x.jpg 1x, ./images/t-mob2x.jpg 2x " 
+            media="(max-width: 767px)"/>
+            <img class="photo-team"
+            src="./images/t-mob2x.jpg"
+            alt="Фото члена команди"
             width="270"
           />
+          </picture>
+          
          <div class="description"> 
           <h3 class="team-name">Ольга Рєпіна</h3>
           <p class="team-post" lang="en">Frontend Developer</p>
@@ -285,11 +301,20 @@
         </li>
 
         <li class="item section-team__item"">
-          <img class="photo-team"
-            src="./images/y.jpg"
-            alt="Фото члена команди Миколи Тарасова"
+          <picture>
+            <source srcset="./images/y.jpg 1x, ./images/y2x.jpg 2x " 
+            media="(min-width: 1200px)"/>
+            <source srcset="./images/y-tab1x.jpg 1x, ./images/y-tab2x.jpg 2x " 
+            media="(min-width: 768px)"/>
+            <source srcset="./images/y-mob1x.jpg 1x, ./images/y-mob2x.jpg 2x " 
+            media="(max-width: 767px)"/>
+            <img class="photo-team"
+            src="./images/y-mob2x.jpg"
+            alt="Фото члена команди "
             width="270"
           />
+          </picture>
+      
           <div class="description"> 
           <h3 class="team-name">Микола Тарасов</h3>
           <p class="team-post" lang="en">Marketing</p>
@@ -327,11 +352,20 @@
         </li>
 
         <li class="item section-team-__item"">
-          <img class="photo-team"
-            src="./images/u.jpg"
-            alt="Фото члена команди Михайла Єрмакова"
+          <picture>
+            <source srcset="./images/u.jpg 1x, ./images/u2x.jpg 2x " 
+            media="(min-width: 1200px)"/>
+            <source srcset="./images/u-tab1x.jpg 1x, ./images/u-tab2x.jpg 2x " 
+            media="(min-width: 768px)"/>
+            <source srcset="./images/u-mob1x.jpg 1x, ./images/u-mob2x.jpg 2x " 
+            media="(max-width: 767px)"/>
+            <img class="photo-team"
+            src="./images/u-mob2x.jpg"
+            alt="Фото члена команди"
             width="270"
           />
+          </picture>
+
           <div class="description"> 
           <h3 class="team-name">Михайло Єрмаков</h3>
           <p class="team-post" lang="en">UI Designer</p>

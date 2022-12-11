@@ -22,13 +22,22 @@
   
 
   .contacts-list {
-    display: flex;
+    display: none;
+    @media screen and (min-width:768px) {
+      display: flex;
+  flex-wrap: wrap;
+  margin-left: 96px;
+  
+
+    }
+
   }
   .contacts-list__item {
     margin-right: 50px;
     &:last-child {
       margin-right: 0;
     }
+  
   }
   
   .contacts-list__link {
@@ -48,10 +57,13 @@
     &:focus {
       color: var(--accent-text-color);
     }
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
     @media screen and (min-width:768px) {
       display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
+    
+
     }
   }
   
