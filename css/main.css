@@ -88,9 +88,17 @@ li {
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: var(--light-color);
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer-button:hover, .footer-button:focus {
   background-color: var(--bcg-focus-button);
+}
+@media screen and (min-width: 1200px) {
+  .footer-button {
+    margin-top: 0;
+  }
 }
 
 .modal-button {
@@ -254,10 +262,6 @@ li {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: var(--secondary-text-color);
-}
-
-.subscription {
-  margin-left: auto;
 }
 
 .modal-comment {
@@ -502,9 +506,8 @@ li {
 }
 
 .address-list {
-  display: flex;
-  flex-direction: column;
   gap: 9px;
+  margin-bottom: 60px;
 }
 
 .address {
@@ -552,10 +555,18 @@ li {
 
 .footer-content {
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .footer-content {
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
 }
 
 .footer-list {
@@ -566,6 +577,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 60px;
   border: 1px;
   border-radius: 50%;
   width: 44px;
@@ -594,9 +606,29 @@ li {
   color: var(--light-color);
 }
 
-.footer-form {
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: flex;
+    gap: 12px;
+  }
+}
+
+.subscription {
   display: flex;
-  gap: 12px;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .subscription {
+    margin-left: auto;
+    align-items: baseline;
+  }
+}
+
+.footer-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav,
@@ -623,6 +655,18 @@ li {
 .menu-open {
   display: flex;
   justify-content: space-between;
+  background-color: #fff;
+  border: 0;
+}
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-open {
+    display: none;
+  }
 }
 
 .mob-icon {
@@ -631,6 +675,7 @@ li {
 
 .mob-menu {
   position: fixed;
+  max-height: 768px;
   padding-top: 10px;
   width: 100vw;
   height: 100vw;
@@ -639,9 +684,12 @@ li {
 }
 
 .mob-close {
+  cursor: pointer;
   display: block;
   margin-left: auto;
   margin-bottom: 10px;
+  border: 0;
+  background-color: #fff;
 }
 
 .menu-mob__link {
@@ -1073,7 +1121,7 @@ body {
 @media screen and (min-width: 768px) {
   .contacts-list__link {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    align-items: baseline;
   }
 }/*# sourceMappingURL=main.css.map */
