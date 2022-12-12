@@ -11,8 +11,9 @@
   }
   .modal {
     position: absolute;
-    width: 528px;
-    min-height: 581px;
+    width: calc(100% - 30px);
+    max-width: 450px;
+    
     background-color: var(--light-color);
     border-radius: 4px;
     top: 50%;
@@ -20,6 +21,11 @@
     transform: translate(-50%, -50%);
     transition: transform 250ms linear;
     padding: 40px;
+    
+    @media screen and(min-width:1200px) {
+    width: 528px;
+    min-height: 581px;
+    }
   }
   .modal-close {
     position: absolute;

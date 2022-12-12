@@ -3,27 +3,44 @@
     padding-bottom: 60px;
   }
   .logo-footer {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
+    @media screen and (min-width:1200px) {
+      display: inline-block;
+      
+    }
   }
   .address-list {
     // display: flex;
     // flex-direction: column;
     gap: 9px;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
   }
   .address {
     font-style: normal;
   }
   .address-text {
+    align-items: center;
+    justify-content: center;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7142;
     letter-spacing: 0.03em;
     color: var(--light-color);
+    @media screen and (min-width:1200px) {
+      align-items: baseline;
+      justify-content: baseline;
+      
+    }
+
   }
   
 .footer-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7142;
@@ -33,6 +50,11 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width:1200px) {
+    display: block;
+    align-items: baseline;
+    justify-content: baseline;
+  }
 }
 .footer {
   background-color: var(--bcg-color);
@@ -42,6 +64,9 @@
   color: var(--accent-text-color);
 }
 .footer-list-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--light-color);
   font-weight: 700;
   font-size: 14px;
@@ -64,7 +89,28 @@
   }
 }
 .footer-list {
-  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  // flex-direction: column;
+  // flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  // align-items: center;
+  // justify-content: center;
+  @media screen and (min-width:768px){
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: 195px;
+  }
+
+  @media screen and (min-width:1200px){
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-left: 70px;
+  }
   
 }
 .footer-link {

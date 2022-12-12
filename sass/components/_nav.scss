@@ -1,6 +1,7 @@
 .nav-menu {
-  
+  @media screen and (min-width:768px) {
     margin-left: 93px;
+  }
   }
 
   .nav-menu__item {
@@ -30,8 +31,7 @@
       display: flex;
       
     }
-  }
-  
+  } 
   .nav-menu__link--current {
     position: relative;
     &::before {
