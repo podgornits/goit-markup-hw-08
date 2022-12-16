@@ -66,6 +66,8 @@
     @media screen and(min-width:1200px) {
       
       max-width: 1600px;
+      padding-top: 200px;
+      padding-bottom: 200px;
     
     }
   }
@@ -80,4 +82,8 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--light-color);
+    @media screen and (min-width:1200px) {
+      font-size: 44px;
+      line-height: 1.3636;
+    }
   }

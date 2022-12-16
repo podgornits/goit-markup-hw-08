@@ -83,6 +83,10 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width:768px){
+    justify-content: space-around;
+    align-items: baseline;
+  }
   @media screen and (min-width:1200px){
     flex-wrap: nowrap;
     align-items: baseline;
@@ -102,7 +106,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-left: 195px;
+    margin: 0;
   }
 
   @media screen and (min-width:1200px){
@@ -117,7 +121,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 60px;
   border: 1px;
   border-radius: 50%;
   width: 44px;
@@ -169,4 +172,7 @@
   align-items: center;
   justify-content: center;
   
+}
+.address-list .item:not(:last-child){
+  margin-bottom: 9px;
 }
