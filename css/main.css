@@ -189,7 +189,7 @@ li {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
     min-height: 581px;
   }
 }
@@ -447,6 +447,7 @@ li {
 @media screen and (min-width: 1200px) {
   .benefits__item {
     flex-basis: calc((100% - 90px) / 4);
+    overflow: hidden;
   }
 }
 
@@ -632,6 +633,7 @@ li {
   .footer-content {
     justify-content: space-around;
     align-items: baseline;
+    gap: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -754,11 +756,6 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-@media screen and (min-width: 480px) {
-  .header__container {
-    max-width: 100%;
-  }
 }
 @media screen and (min-width: 768px) {
   .header__container {
@@ -1265,6 +1262,7 @@ body {
 @media screen and (min-width: 1200px) {
   .contacts-list__item:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -1289,5 +1287,6 @@ body {
 @media screen and (min-width: 768px) {
   .contacts-list__link {
     display: flex;
+    align-items: center;
   }
 }/*# sourceMappingURL=main.css.map */
